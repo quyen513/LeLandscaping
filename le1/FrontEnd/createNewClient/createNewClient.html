@@ -8,8 +8,7 @@
     <h1>Create New Client</h1>
 </head>
 <body>
-    <div class="container-center-horizontal">
-        
+    <div class="container-center-horizontal">   
         <!-- Input For clientname  -->
         <div class="clientname">
             <label class="label" for="clientnameInput">Full Name <span class="span1">*</span></label>
@@ -48,7 +47,68 @@
               maxlength="25"
             />
         </div>
-    
+    </div>
+    <br>
+    <div>
+        <table id="workdetail" border="black">
+            <tr><td>Charge</td>
+                <td>Frequent</td>
+                <td>Type</td>
+                <td>Payment</td>
+                <td>Schedule</td>
+                <td>date</td>
+            </tr>
+            <tr>
+                <td><input
+                    type="number"
+                    class="inputs"
+                    id="chargeInput"
+                    placeholder="$"
+                    maxlength="5"
+                  /></td>
+
+                <td><input
+                    type="text"
+                    class="inputs"
+                    id="freqInput"
+                    placeholder="2x or 4x"
+                    maxlength="5"
+                  /></td>
+
+                <td><input
+                    type="text"
+                    class="inputs"
+                    id="typeInput"
+                    placeholder="Regular or full"
+                    maxlength="10"
+                  /></td>
+
+                <td><input
+                    type="text"
+                    class="inputs"
+                    id="paymentInput"
+                    placeholder="check or zelly"
+                    maxlength="10"
+                  /></td>
+
+                <td><input
+                    type="text"
+                    class="inputs"
+                    id="scheduleInput"
+                    placeholder="A or B"
+                    maxlength="1"
+                  /></td>
+
+                <td><input
+                    type="text"
+                    class="inputs"
+                    id="dateInput"
+                    placeholder="date"
+                    maxlength="3"
+                  /></td>
+            </tr>    
+        </table>
+        <button> Create </button>
     </div>
 </body>
 </html>
