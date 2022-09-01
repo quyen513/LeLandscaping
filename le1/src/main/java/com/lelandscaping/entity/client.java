@@ -20,7 +20,19 @@ public class client {
     private String address;
     @Column(name="phone")
     private String phone;
-
+    @Column(name="charge")
+    private int charge;
+    @Column(name="frequent")
+    private String frequent;
+    @Column(name="worktype")
+    private String worktype;
+    @Column(name="payment")
+    private String payment;
+    @Column(name="schedule")
+    private String schedule;
+    @Column(name="workdate")
+    private String workdate;
+    
     //constructors
     public client(){};
 
@@ -37,53 +49,36 @@ public class client {
         this.phone = phone;
     }
 
+    
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((address == null) ? 0 : address.hashCode());
-        result = prime * result + clientId;
-        result = prime * result + ((full_name == null) ? 0 : full_name.hashCode());
-        result = prime * result + ((phone == null) ? 0 : phone.hashCode());
-        return result;
+   
+
+    public client(String full_name, String address, String phone, int charge, String frequent, String worktype,
+            String payment, String schedule, String workdate) {
+        this.full_name = full_name;
+        this.address = address;
+        this.phone = phone;
+        this.charge = charge;
+        this.frequent = frequent;
+        this.worktype = worktype;
+        this.payment = payment;
+        this.schedule = schedule;
+        this.workdate = workdate;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        client other = (client) obj;
-        if (address == null) {
-            if (other.address != null)
-                return false;
-        } else if (!address.equals(other.address))
-            return false;
-        if (clientId != other.clientId)
-            return false;
-        if (full_name == null) {
-            if (other.full_name != null)
-                return false;
-        } else if (!full_name.equals(other.full_name))
-            return false;
-        if (phone == null) {
-            if (other.phone != null)
-                return false;
-        } else if (!phone.equals(other.phone))
-            return false;
-        return true;
+    public client(int clientId, String full_name, String address, String phone, int charge, String frequent,
+            String worktype, String payment, String schedule, String workdate) {
+        this.clientId = clientId;
+        this.full_name = full_name;
+        this.address = address;
+        this.phone = phone;
+        this.charge = charge;
+        this.frequent = frequent;
+        this.worktype = worktype;
+        this.payment = payment;
+        this.schedule = schedule;
+        this.workdate = workdate;
     }
-
-    @Override
-    public String toString() {
-        return "client [address=" + address + ", clientId=" + clientId + ", full_name=" + full_name + ", phone=" + phone
-                + "]";
-    }
-
 
     // getters and setters
     public int getClientId() {
@@ -116,6 +111,54 @@ public class client {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public int getCharge() {
+        return charge;
+    }
+
+    public void setCharge(int charge) {
+        this.charge = charge;
+    }
+
+    public String getFrequent() {
+        return frequent;
+    }
+
+    public void setFrequent(String frequent) {
+        this.frequent = frequent;
+    }
+
+    public String getWorktype() {
+        return worktype;
+    }
+
+    public void setWorktype(String worktype) {
+        this.worktype = worktype;
+    }
+
+    public String getPayment() {
+        return payment;
+    }
+
+    public void setPayment(String payment) {
+        this.payment = payment;
+    }
+
+    public String getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(String schedule) {
+        this.schedule = schedule;
+    }
+
+    public String getWorkdate() {
+        return workdate;
+    }
+
+    public void setWorkdate(String workdate) {
+        this.workdate = workdate;
     }
 
 }
