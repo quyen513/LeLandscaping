@@ -1,5 +1,7 @@
 package com.lelandscaping.service.implementations;
 
+import java.util.List;
+
 import com.lelandscaping.customException.BlankInputs;
 import com.lelandscaping.dao.implementations.clientDao;
 import com.lelandscaping.entity.client;
@@ -36,6 +38,16 @@ public class ClientService implements ClientServiceInt{
     public client getUserByIdService(int clientId) {
         // TODO Auto-generated method stub
         return null;
+    }
+
+
+  
+
+
+    @Override
+    public List<client> getAllClientsService() {
+        
+        return this.clientDao.getAllClients();
     }
     
 }

@@ -21,10 +21,9 @@ public class clientDao implements clientDaoInt {
     @Override
     public List<client> getAllClients() {
         HibernateUtil.beginTransaction();
-        List<client> returnClients = HibernateUtil.getSession().createQuery("from client_table", client.class ).list();
+        List<client> returnClients = HibernateUtil.getSession().createQuery("FROM client", client.class ).list();
         HibernateUtil.endTransaction();
-        return returnClients;
-        
+        return returnClients;    
     }
     
 }

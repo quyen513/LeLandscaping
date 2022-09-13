@@ -12,7 +12,8 @@ public class appController {
     };
 
     public void createClientRoutes(){
-        app.get("/client/createNewClient",clientController.registerClient);
-
+        app.post("/client/createNewClient",clientController.registerClient);
+        app.get("/clients/getAll", clientController.getAllClients);
     }
+    
 }

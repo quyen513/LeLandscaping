@@ -22,6 +22,6 @@
         <!-- this means that any SQL commands that are run will be displayed on the terminal: -->
         <property name="show_sql">true</property>
         <!-- Object Reational Mapping, we're mapping our Pet class (that we have yet to create) to a table in our database-->
-        <mapping class="com.lelandscaping.entity.client"/> 
+        <mapping class="com.lelandscaping.entity.client"/>  
     </session-factory>
 </hibernate-configuration>

@@ -1,6 +1,7 @@
 package com.lelandscaping.app.controllers;
 
 import java.util.HashMap;
+import java.util.List;
 
 import com.google.gson.Gson;
 import com.lelandscaping.customException.BlankInputs;
@@ -16,7 +17,7 @@ public class clientController {
         this.clientService = clientService;
     }
 
-    // Register User
+    // Register Client
     public Handler registerClient = ctx -> {
         Gson gson = new Gson();
         try {
@@ -39,4 +40,30 @@ public class clientController {
             ctx.status(400);
         }
     };
+
+     // Get all Clients
+     public Handler getAllClients = ctx ->{
+        Gson gson = new Gson();
+        
+        try {
+            List<client> clients = this.clientService.getAllClientsService();
+            if (clients == null) {
+                HashMap<String, String> message = new HashMap<>();
+                message.put("errorMessage", "Error processing request");
+                ctx.result(gson.toJson(message));
+                ctx.status(400);
+            }
+            String clientsJSONs = gson.toJson(clients);
+            ctx.result(clientsJSONs);
+            ctx.status(200);
+        } catch (BlankInputs e) {
+            HashMap<String, String> message = new HashMap<>();
+            message.put("errorMessage", e.getMessage());
+            ctx.result(gson.toJson(message));
+            ctx.status(400);
+        }
+    };
+
+   
+
 }
