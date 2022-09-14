@@ -1,13 +1,21 @@
 const createNewClientBtn = document.getElementById("createNewClientBtn");
 const AHouses = document.getElementById("AHouses");
 const BHouses = document.getElementById("BHouses");
-
+const DetailA = document.getElementById("DetailA");
+const DetailB = document.getElementById("DetailB");
 const allInfo = document.getElementById("allInfo");
 
 function createNewClientPage(){
     window.location.href = "D:/QbvProjects/LeLandscaping/le1/FrontEnd/createNewClient/createNewClient.html"
-}
-createNewClientBtn.addEventListener("click",createNewClientPage);
+}createNewClientBtn.addEventListener("click",createNewClientPage);
+
+function detailA(){
+    window.location.href ="google.com";
+}DetailA.addEventListener("click",detailA);
+
+function detailB(){
+    window.location.href ="www.google.com";
+}DetailB.addEventListener("click",detailB);
 
 async function getAll(){
     let countA=0, countB=0;
