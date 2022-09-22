@@ -1,0 +1,27 @@
+
+
+body {
+    /* background-image: url("name.png"); */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(178, 245, 169);
+  }
+  
+  h1 {
+    color: rgb(12, 9, 3);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  
+  table, th, td {
+    border: 2px solid;
+    background-color: rgb(247, 177, 151);
+     
+  }
+
+  
