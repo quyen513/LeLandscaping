@@ -1,6 +1,9 @@
+
+body {
+    background-color: rgb(237, 247, 235);
+}
 .header-wrapper {
-     background-image: url("pngtree-fresh-green-ecological-lawn-blue-sky-background-picture-image_1065768.jpg"); 
-    
+    background-image: url("pngtree-fresh-green-ecological-lawn-blue-sky-background-picture-image_1065768.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(237, 247, 235);
@@ -25,7 +28,7 @@
     text-align: center;
     color: aliceblue; 
     padding: 20px;  
-    background-color: rgb(19, 16, 16);
+    background-color: rgb(49, 48, 48);
 }
 .selections {
     max-width: 100%;  
@@ -56,4 +59,18 @@
 .welcomeText{
     text-align: center;
    font-size: 35px;
+   background-repeat: no-repeat;
+    background-size: cover;
+   /* background-image: url("pngtree-fresh-green-ecological-lawn-blue-sky-background-picture-image_1065768.jpg");  */
+}
+
+.servicesList{
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url("pngtree-fresh-green-ecological-lawn-blue-sky-background-picture-image_1065768.jpg");  */
+}
+
+.phone{
+    text-align: center;
+
 }
