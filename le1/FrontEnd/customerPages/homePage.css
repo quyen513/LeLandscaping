@@ -1,0 +1,59 @@
+.header-wrapper {
+     background-image: url("pngtree-fresh-green-ecological-lawn-blue-sky-background-picture-image_1065768.jpg"); 
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(237, 247, 235);
+  }
+
+
+.header-center-logo {  
+    width: auto;  
+    height: auto;
+    text-align: center;  
+
+    }  
+.header-logo {  
+        max-width: 30%;  
+        height: auto;  
+        }  
+
+
+.page{
+    max-width: 100%;  
+    height: auto; 
+    text-align: center;
+    color: aliceblue; 
+    padding: 20px;  
+    background-color: rgb(19, 16, 16);
+}
+.selections {
+    max-width: 100%;  
+    height: auto; 
+    text-align: center;  
+    padding: 20px;  
+    
+}
+
+.ul, li {
+
+   display: inline; 
+ 
+   border: 20px solid rgb(255, 255, 255);  
+   background-color: rgb(255, 255, 255);
+}
+
+.ct-image{
+    max-width: 20%;  
+    height: auto;  
+    display: inline; 
+    width: auto;  
+    height: auto;
+    text-align: center;  
+    padding: 15px;  
+}
+
+.welcomeText{
+    text-align: center;
+   font-size: 35px;
+}
