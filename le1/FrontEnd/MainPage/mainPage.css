@@ -1,27 +1,42 @@
 
 
 body {
-    /* background-image: url("name.png"); */
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(178, 245, 169);
-  }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(237, 247, 235);
+}
   
-  h1 {
-    color: rgb(12, 9, 3);
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
-  
-  table, th, td {
-    border: 2px solid;
-    background-color: rgb(247, 177, 151);
-     
-  }
+.header-wrapper {
+  background-image: url("D:/QbvProjects/LeLandscaping/le1/FrontEnd/logo_pictures/pngtree-fresh-green-ecological-lawn-blue-sky-background-picture-image_1065768.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(237, 247, 235);
+}
+
+.header-center-logo {  
+  width: auto;  
+  height: auto;
+  text-align: center;  
+}  
+
+.header-logo {  
+  max-width: 30%;  
+  height: auto;  
+}  
+
+.page {
+  max-width: 100%;  
+  height: auto; 
+  text-align: center;
+  color: aliceblue; 
+  padding: 20px;  
+  background-color: rgb(49, 48, 48);
+}
+
+.table-wrapper {
+  text-align: center;
+  border: 2px solid;
+  background-color: rgb(255,255,255);
+}
 
   

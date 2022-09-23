@@ -3,7 +3,7 @@ body {
     background-color: rgb(237, 247, 235);
 }
 .header-wrapper {
-    background-image: url("pngtree-fresh-green-ecological-lawn-blue-sky-background-picture-image_1065768.jpg"); 
+    background-image: url("D:/QbvProjects/LeLandscaping/le1/FrontEnd/logo_pictures/pngtree-fresh-green-ecological-lawn-blue-sky-background-picture-image_1065768.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(237, 247, 235);
@@ -78,6 +78,6 @@ body {
     background-image: url("bottom.PNG"); 
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px;
+    padding: 20px;
 }
 
